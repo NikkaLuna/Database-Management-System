@@ -144,8 +144,3 @@ CROSS JOIN supplier CROSS JOIN coffee;
 
 
 
-
-------------------------------------------------------------------------------------------------------
-
-
-B2. Develop SQL code to populate each table in the database design document:

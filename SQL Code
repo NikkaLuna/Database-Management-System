@@ -1,0 +1,151 @@
+Create a database using the attached "Jaunty Coffee Co. ERD" by doing the following:
+B1. Develop SQL code to create each table:
+
+CREATE TABLE coffee_shop (
+shop_id		int	NOT NULL, 
+shop_name	 varchar(50)	NOT NULL, 
+city	varchar(50)		NOT NULL,
+state	char(2)	NOT NULL, 
+PRIMARY KEY (shop_id)
+);
+
+
+CREATE TABLE employee (
+employee_id		int			NOT NULL, 
+first_name	varchar(30)	NOT NULL, 
+last_name	 varchar(30)	NOT NULL, 
+hire_date		date	NOT NULL, 
+job_title	varchar(30)	NOT NULL, 
+shop_id	int	NOT NULL, 
+PRIMARY KEY (employee_id),
+FOREIGN KEY (shop_id) REFERENCES coffee_shop (shop_id)
+);
+
+
+CREATE TABLE supplier (
+supplier_id	int	NOT NULL,
+company_name	varchar(50)	NOT NULL, 
+country		varchar(30)		NOT NULL, 
+sales_contact_name varchar(60)  NOT NULL, 
+email	varchar(50)	NOT NULL, 
+PRIMARY KEY (supplier_id)
+);
+
+
+CREATE TABLE coffee (
+coffee_id	int	NOT NULL,
+shop_id	int		NOT NULL, 
+supplier_id	int	NOT NULL, 
+coffee_name	varchar(30) NOT NULL, 
+price_per_pound		numeric(5,2) NOT NULL, 
+PRIMARY KEY (coffee_id),
+FOREIGN KEY (shop_id) REFERENCES coffee_shop (shop_id), 
+FOREIGN KEY (supplier_id) REFERENCES supplier (supplier_id)
+);
+
+
+
+------------------------------------------------------------------------------------------------------
+
+B2. Develop SQL code to populate each table in the database design document:
+
+INSERT INTO coffee_shop
+VALUES (123, 'Elevate Coffee Company', 'Phoenix', 'AZ');
+
+
+INSERT INTO coffee_shop
+VALUES (124, 'Lux Coffee', 'Dallas', 'TX');
+
+
+INSERT INTO coffee_shop
+VALUES (125, 'Blue Tiger Coffee', 'Los Angeles', 'CA');
+
+
+INSERT INTO employee
+VALUES (51, 'Larry', 'Nolan', '2012-03-16', 'Manager', 123);
+
+
+INSERT INTO employee
+VALUES (89, 'Sarah', 'Ellis', '2017-05-05', 'Manager', 124);
+
+
+INSERT INTO employee
+VALUES (11, 'Amos', 'Delgado', '2015-12-12', 'Manager', 125);
+
+
+INSERT INTO supplier
+VALUES (89, 'Southwest Refreshments', 'USA', 'Richard Weller', 'richardweller@gmail.com');
+
+
+INSERT INTO supplier
+VALUES (97, 'The Human Bean', 'USA', 'Jayde Midas', 'jaydemidas@gmail.com');
+ 
+INSERT INTO supplier
+VALUES (34, 'Code Brew', 'USA', 'Michelle Reese', 'michellereese@gmail.com');
+
+
+INSERT INTO coffee
+VALUES (2234, 123, 34, 'Arabica', 12.58);
+
+
+INSERT INTO coffee
+VALUES (118, 124, 89, 'Robusta', 17.32);
+
+
+INSERT INTO coffee
+VALUES (2987, 125, 97, 'Liberica', 11.39);
+
+
+
+------------------------------------------------------------------------------------------------------
+
+3. Provide the SQL code you wrote to create your view. The view should show all of the information from the “Employee” table but concatenate each employee’s first and last name, formatted with a space between the first and last name, into a new attribute called employee_full_name.
+
+CREATE VIEW employee_info 
+AS SELECT employee_id,
+CONCAT(first_name, ' ', last_name) AS employee_full_name, 
+hire_date,
+job_title, 
+shop_id
+FROM employee;
+
+
+
+------------------------------------------------------------------------------------------------------
+
+4. Provide the SQL code you wrote to create your index on the coffee_name field from the “Coffee” table.
+
+
+CREATE INDEX coffee_index 
+ON coffee (coffee_name);
+
+
+
+------------------------------------------------------------------------------------------------------
+
+5a. Provide the SQL code you wrote to create your SFW query.
+
+
+SELECT*
+FROM employee
+WHERE hire_date BETWEEN '2014-01-01' AND '2017-12-15';
+
+
+
+------------------------------------------------------------------------------------------------------
+
+6. Provide the SQL code you wrote to create your table joins query. The query should join together three different tables and include attributes from all three tables in its output.
+
+
+SELECT shop_name, company_name, coffee_name FROM coffee_shop
+CROSS JOIN supplier CROSS JOIN coffee;
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------
+
+
+B2. Develop SQL code to populate each table in the database design document:

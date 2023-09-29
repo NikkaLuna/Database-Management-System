@@ -19,21 +19,6 @@ SCENARIO:
 
 As a hired database designer and developer, you are tasked with assisting Nora’s Bagel Bin and Jaunty Coffee Co. in managing their businesses through well-designed databases. The assessment is divided into the following key parts:
 
-Nora’s Bagel Bin Database:
-
-Design a normalized physical database model for the ordering system.
-Create tables and populate them with sample data.
-Develop SQL queries for testing and reporting.
-Capture and document query results using screenshots.
-Jaunty Coffee Co. Database:
-
-Utilize an existing database design document to create the database.
-Load tables with sample data.
-Implement a view and an index for query optimization.
-Construct SQL queries for reporting purposes.
-Capture and document query results through screenshots.
-
-
 
 
 ## Authors

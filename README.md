@@ -9,9 +9,13 @@ The primary objective of this project is to demonstrate proficiency in designing
 KEY FEATURES:
 
 Creation of a normalized physical database model for Nora’s Bagel Bin's ordering system.
+
 Implementation of an existing database design document for Jaunty Coffee Co.
+
 Loading of tables with sample data.
+
 Creation of a view and an index to enhance query performance.
+
 Development of both simple and complex SQL queries to generate meaningful reports.
 
 

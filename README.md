@@ -1,6 +1,13 @@
 # Database-Management-System
 For this project, I created an entity-relationship (ER) model, databases, tables, and queries for two fictional small businesses. I used SQL to test and run the database application.
 
+
+<div style="text-align: center;">
+  <img src="https://github.com/NikkaLuna/SQL_Database_Management_System/assets/94496219/6df488c3-5f77-42c9-a5b8-452ddb02197b alt="Image">
+</div>
+
+
+
 OBJECTIVE:
 
 The primary objective of this project is to demonstrate proficiency in designing, developing, and querying databases. By effectively implementing ER models, creating tables, optimizing queries, and presenting meaningful reports, this project aims to showcase practical database management skills.

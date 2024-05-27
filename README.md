@@ -1,4 +1,5 @@
-# Database-Management-System
+#SQL-Database-Management-System
+
 For this project, I created an entity-relationship (ER) model, databases, tables, and queries for two fictional small businesses. I used SQL to test and run the database application.
 
 
@@ -7,19 +8,17 @@ For this project, I created an entity-relationship (ER) model, databases, tables
 </div>
 
 
-
 ## OBJECTIVE
 
-The primary objective of this project is to demonstrate proficiency in designing, developing, and querying databases. By effectively implementing ER models, creating tables, optimizing queries, and presenting meaningful reports, this project aims to showcase practical database management skills.
+The primary objective of this project was to demonstrate my proficiency in designing, developing, and querying databases. By effectively implementing ER models, creating tables, optimizing queries, and presenting meaningful reports, I aimed to showcase my practical database management skills.
 
 ## KEY FEATURES
 
-- Creation of a normalized physical database model for Nora’s Bagel Bin's ordering system.
-- Implementation of an existing database design document for Jaunty Coffee Co.
-- Loading of tables with sample data.
-- Creation of a view and an index to enhance query performance.
-- Development of both simple and complex SQL queries to generate meaningful reports.
-
+- Created a normalized physical database model for Nora’s Bagel Bin's ordering system.
+- Implemented an existing database design document for Jaunty Coffee Co.
+- Loaded tables with sample data.
+- Created a view and an index to enhance query performance.
+- Developed both simple and complex SQL queries to generate meaningful reports.
 
 ## Authors
 

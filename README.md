@@ -8,18 +8,17 @@ For this project, I created an entity-relationship (ER) model, databases, tables
 
 
 
-OBJECTIVE:
+## OBJECTIVE
 
 The primary objective of this project is to demonstrate proficiency in designing, developing, and querying databases. By effectively implementing ER models, creating tables, optimizing queries, and presenting meaningful reports, this project aims to showcase practical database management skills.
 
+## KEY FEATURES
 
-KEY FEATURES:
-
-Creation of a normalized physical database model for Nora’s Bagel Bin's ordering system.
-Implementation of an existing database design document for Jaunty Coffee Co.
-Loading of tables with sample data.
-Creation of a view and an index to enhance query performance.
-Development of both simple and complex SQL queries to generate meaningful reports.
+- Creation of a normalized physical database model for Nora’s Bagel Bin's ordering system.
+- Implementation of an existing database design document for Jaunty Coffee Co.
+- Loading of tables with sample data.
+- Creation of a view and an index to enhance query performance.
+- Development of both simple and complex SQL queries to generate meaningful reports.
 
 
 ## Authors
@@ -28,7 +27,7 @@ Development of both simple and complex SQL queries to generate meaningful report
 
 
 ## 🚀 About Me
-I'm a Software Engineer with an emphasis on Java, SQL, and AWS.  
+I'm a Software Engineer with an emphasis on Java, Python, SQL, and AWS.  
 
 
 ## 🔗 Links

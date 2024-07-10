@@ -1,7 +1,10 @@
 
-#SQL-Database-Management-System
+# SQL Database Management System
+
+## Project Overview
 
 For this project, I created an entity-relationship (ER) model, databases, tables, and queries for two fictional small businesses. I used SQL to test and run the database application.
+
 
 
 <div style="text-align: center;">
